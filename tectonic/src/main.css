@@ -1,0 +1,103 @@
+
+
+.pic-row:nth-child(5n+2) {
+  border-top: 2px solid black !important;
+}
+
+.pic-col-spec:nth-child(5n+2) {
+  border-left: 2px solid black !important;
+}
+
+.pic-cell:nth-child(5n+2) {
+  border-left: 2px solid black !important;
+}
+
+.pic-table {
+  border: 2px solid black;
+  border-collapse: collapse;
+  margin: 0px;
+  text-align: center;
+}
+
+table.solved th {
+  display: none;
+}
+
+table.solved th {
+  display: none;
+}
+
+.pic-row {
+  margin: 0px;
+  justify-content: right;
+  border: 1px solid black;
+}
+
+.pic-corner {
+  margin: 0px;
+  padding: 2px;
+  border: 0px solid black !important;
+}
+
+.pic-col-spec {
+  margin: 0px;
+  padding: 2px;
+  width: 30px;
+  border: 1px solid black;
+  display: table-cell;
+  vertical-align: bottom;
+}
+
+span.spec {
+  font-weight: bold;
+  padding: 2px;
+}
+
+span.col-1 {
+  color: black;
+}
+
+.pic-row-spec {
+  margin: 0px;
+  padding: 2px;
+  height: 30px;
+  text-align: right;
+}
+
+.pic-cell {
+  margin: 0px;
+  padding: 2px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid black;
+  text-align: center;
+}
+
+.pic-cell.highlight {
+  border: 2px solid blue;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.nonclickable {
+  cursor: default;
+}
+
+.pic-cell:focus {
+  border: blue solid 3px;
+}
+
+.pic-cell.black {
+  background-color: black;
+}
+
+.pic-cell.white {
+  background-color: white;
+}
+
+.black {
+  background-color: black;
+}
+
