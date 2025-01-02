@@ -36,7 +36,7 @@ export class HTMLRenderer {
     const self = this;
     dom.addEventListener("mouseenter", function () {
       const status = self.solver.getStatus(i,j);
-      self.logs.innerHTML = `<h4>Status: ${status.code}</h4>`;
+      self.logs.innerHTML = `<h4>Status: ${status}</h4>`;
     });
     dom.addEventListener("click"      , (e) => { e.preventDefault(); self.solver.setValue(i,j,1   ); self.paint(); });
     dom.addEventListener("contextmenu", (e) => { e.preventDefault(); self.solver.setValue(i,j,0   ); self.paint(); });
@@ -46,6 +46,7 @@ export class HTMLRenderer {
 
 
   paint() {
+    const self = this;
     this.cells.forEach(function(row, i) {
       row.forEach(function(cell,j) {
         const status = self.solver.getStatus(i,j);
@@ -56,14 +57,14 @@ export class HTMLRenderer {
           cell.style.backgroundColor = 'white';
           cell.style.color = "black";
           cell.innerText = "-";
-        } else if (status.code == 'error') {
+        } else if (status == 'error') {
           cell.style.backgroundColor = "red";
           cell.innerText = "";
-        } else if (status.code == 'black') {
+        } else if (status == 'black') {
           cell.style.backgroundColor = "rgba(0,0,0,0.9)";
           cell.style.color = "white";
           cell.innerText = "!";
-        } else if (status.code == 'white') {
+        } else if (status == 'white') {
           cell.style.backgroundColor = "rgba(0,0,0,0.1)";
           cell.style.color = "blue";
           cell.innerText = "!";

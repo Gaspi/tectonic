@@ -1,9 +1,9 @@
 import './style.css'
 
-import { TectonicSolverInterface } from './solverInterface.ts'
+import { InteractiveSolverInterface } from './interactiveSolverInterface.ts'
 
-var editor_interface: TectonicSolverInterface;
+var editor_interface: InteractiveSolverInterface;
 window.onload = function() {
-  editor_interface = new TectonicSolverInterface();
+  editor_interface = new InteractiveSolverInterface();
   get('tectonic')
 }

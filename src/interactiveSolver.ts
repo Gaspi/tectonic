@@ -6,14 +6,14 @@ export class InteractiveSolver {
     constructor(tectonic: Tectonic) {
       this.tectonic = tectonic;
     }
-    getStatus(i:number, j:number) {
-
+    getStatus(i:number, j:number):string {
+      return "TODO"
     }
-    getValue(i:number, j:number) {
-        
+    getValue(i:number, j:number):number {
+      return 0;
     }
-    setValue(i:number, j:number, v:number) {
-        
+    setValue(i:number, j:number, v:number): void {
+      
     }
   }
   
